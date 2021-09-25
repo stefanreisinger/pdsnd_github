@@ -1,17 +1,22 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+### Project Title
+UDACITY - Programming for Data Science with Python Nanodegree Program - Project: Post your Work on Github
 
 ### Date created
-Include the date you created this project and README file.
-
-### Project Title
-Replace the Project Title
+25.09.2021
 
 ### Description
-Describe what your project is about and what it does
+This project was created as part of the UDACITY **Programming for Data Science with Python** Nanodegree Program.
+One of the projects in this program requires to fork a base repository and work with it ba adding changes, branches,
+merges, ... The submission consits of a list of perfomed operations and git commands that are then checked against
+the actual repository.
 
 ### Files used
-Include the files used
+* **bikeshare.py** - code from a previous project in the program about Python programming
+* **chicago.csv** - datafile for bikeshare.py (excluded by .gitignore, since it is available otherwise)
+* **new_york_city.csv** - datafile for bikeshare.py (excluded by .gitignore, since it is available otherwise)
+* **washington.csv** - datafile for bikeshare.py (excluded by .gitignore, since it is available otherwise)
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Thanks to the guys at UDACITY for all the great learniung material and the project work that really helps to
+get to take the new skills to practice.
 
