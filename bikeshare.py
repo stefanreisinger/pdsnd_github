@@ -145,6 +145,8 @@ def time_stats(df):
     df_month = pd.to_datetime(df['Start Time']).dt.month_name()
     mc_month = df_month.mode().values[0]
     print('    The most common month in the dataset is:         {}'.format(mc_month))
+    if month != 'all':
+        print('    --> which is no surprise, since you wanted the data filtered by that day')
         
     # display the most common day of week
     df_day = pd.to_datetime(df['Start Time']).dt.weekday_name
