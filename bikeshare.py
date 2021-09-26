@@ -151,11 +151,15 @@ def time_stats(df):
     df_month = pd.to_datetime(df['Start Time']).dt.month_name()
     mc_month = df_month.mode().values[0]
     print('    The most common month in the dataset is:         {}'.format(mc_month))
+    if month != 'all':
+        print('    --> which is no surprise, since you wanted the data filtered by that month')
         
     # display the most common day of week
     df_day = pd.to_datetime(df['Start Time']).dt.weekday_name
     mc_day = df_day.mode().values[0]
     print('    The most common day of week in the dataset is:   {}'.format(mc_day))
+    if day != 'all':
+        print('    --> which is no surprise, since you wanted the data filtered by that day')
     
     # display the most common start hour
     df_hour = pd.to_datetime(df['Start Time']).dt.hour
@@ -223,7 +227,7 @@ def user_stats(df):
         num_female = df[df['Gender'] == 'Female'].index.size
         print('    The number of Females in the dataset is:         {}\n'.format(num_female))
     else:
-        print('    No Gender information available ...\n')
+        print('    WARNING: No Gender information available in chosen city datafile...\n')
         
     # Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df:
@@ -235,7 +239,7 @@ def user_stats(df):
         common_year = int(df['Birth Year'].mode().values[0])
         print('    The most common birth year in the dataset is:    {}'.format(common_year))
     else:
-        print('    No Birth Year information available ...')
+        print('    WARNING: No Birth Year information available in chosen city datafile...')
 
 
     print("This took %.3f seconds.\n" % (time.time() - start_time))
