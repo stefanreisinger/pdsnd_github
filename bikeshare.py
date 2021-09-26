@@ -217,7 +217,7 @@ def user_stats(df):
         num_female = df[df['Gender'] == 'Female'].index.size
         print('    The number of Females in the dataset is:         {}\n'.format(num_female))
     else:
-        print('    No Gender information available ...\n')
+        print('    WARNING: No Gender information available in chosen city datafile...\n')
         
     # Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df:
@@ -229,7 +229,7 @@ def user_stats(df):
         common_year = int(df['Birth Year'].mode().values[0])
         print('    The most common birth year in the dataset is:    {}'.format(common_year))
     else:
-        print('    No Birth Year information available ...')
+        print('    WARNING: No Birth Year information available in chosen city datafile...')
 
 
     print("This took %.3f seconds.\n" % (time.time() - start_time))
