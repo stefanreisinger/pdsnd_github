@@ -1,3 +1,5 @@
+# Project Overview
+
 ### Project Title
 UDACITY - Programming for Data Science with Python Nanodegree Program - Project: Post your Work on Github
 
@@ -12,11 +14,10 @@ the actual repository.
 
 ### Files used
 * **bikeshare.py** - code from a previous project in the program about Python programming
-* **chicago.csv** - datafile for bikeshare.py (excluded by .gitignore, since it is available otherwise)
-* **new_york_city.csv** - datafile for bikeshare.py (excluded by .gitignore, since it is available otherwise)
-* **washington.csv** - datafile for bikeshare.py (excluded by .gitignore, since it is available otherwise)
+* **chicago.csv** - example datafile (excluded by .gitignore, since it is available otherwise)
+* **new_york_city.csv** - example datafile (excluded by .gitignore, since it is available otherwise)
+* **washington.csv** - example datafile (excluded by .gitignore, since it is available otherwise)
 
 ### Credits
 Thanks to the guys at UDACITY for all the great learniung material and the project work that really helps to
 get to take the new skills to practice.
-
