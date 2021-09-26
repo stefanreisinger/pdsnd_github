@@ -1,3 +1,9 @@
+# bikeshare.py
+# V1.0 - 18.08.2021 - Stefan Reisinger
+#
+# Written as one of the projects in the UDACITY "Programming for Data Science with Python
+# Nanodegree Program, based on the given code template.
+
 import time
 import pandas as pd
 import numpy as np
